@@ -16,7 +16,7 @@ function App() {
      </div>
      <Content></Content>
     
-<div className='md:flex'>
+<div className='md:flex  justify-between mx-20 p-15 gap-20'>
 <Receipes></Receipes>
 <CookTable></CookTable>
 </div>
