@@ -7,8 +7,10 @@ function App() {
     <>
       <div>
         <Header></Header>
-        <br />
-        <Nav></Nav>
+     <div className='my-10'>
+     <Nav>
+     </Nav>
+     </div>
       </div>
     </>
   )

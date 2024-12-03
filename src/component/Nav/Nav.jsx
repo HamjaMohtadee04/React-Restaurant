@@ -1,19 +1,20 @@
-
+// import image from '../../assets/images/restaurant.jpg'
 import './Nav.css'
 const Nav = () => {
     return (
-        <div className="banner">
-        <div className="content">
-          <h1>Welcome to Cyber Attack Detection</h1>
-          <p>
-            An innovative framework combining ontology and machine learning to safeguard systems.
-          </p>
-          <div className="buttons">
-            <button onClick={() => window.location.href = '#explore'}>Explore Now</button>
-            <button onClick={() => window.location.href = '#feedback'}>Our Feedback</button>
-          </div>
+       <div className='NavContainer justify-center text-center'>
+
+        <div className=''>
+        {/* <img className='rounded-xl w-25' src={image} alt="" /> */}
+          <h2 className='text-5xl font-bold text-white p-2 m-5'>Discover an exceptional cooking <br /> <span> class tailored for you!</span></h2>
+          <p className='text-2xl font-semibold text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas repudiandae, deleniti expedita debitis ut reprehenderit possimus rem similique dignissimos maxime, amet impedit nam. Eum, omnis distinctio officia fuga dignissimos libero!</p>
         </div>
-      </div>
+        <div className='flex gap-10 mr-5 m-5 justify-center'>
+        <button className="text-2xl  font-semibold bg-lime-700 rounded-xl p-2">Explore Now</button>
+        <button id='button2' className="text-2xl  font-semibold bg-slate-200  rounded p-2">Our Feedback</button>
+        </div>
+
+       </div>
     );
 };
 
