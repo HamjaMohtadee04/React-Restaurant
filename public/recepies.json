@@ -1,0 +1,61 @@
+[
+    {
+      "recipe_image": "https://i.ibb.co.com/YDkgZkg/raman-sqc-H2q7lkvo-unsplash.jpg",
+      "recipe_id": 1,
+      "recipe_name": "Chicken Curry",
+      "short_description": "A flavorful and spicy chicken curry made with aromatic spices.",
+      "ingredients": ["500 g chicken", "2 onions", "3 tomatoes", "200 ml coconut milk", "3 tsp curry powder"],
+      "preparing_time": "45 min",
+      "calories": "450 calories"
+    },
+    {
+      "recipe_image": " https://i.ibb.co.com/pbsLV4q/paish-zaini-9-UJTn-Xp-UXM-unsplash.jpg",
+      "recipe_id": 2,
+      "recipe_name": "Spaghetti Bolognese",
+      "short_description": "A classic Italian pasta dish with a rich and savory meat sauce.",
+      "ingredients": ["400 g spaghetti", "500 g ground beef", "1 onion", "2 garlic cloves", "400 g tomato sauce"],
+      "preparing_time": "30 min",
+      "calories": "600 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/2hBRdMx/louis-hansel-Ml-PD-Az-ZYMg-unsplash.jpg",
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Stir-Fry",
+      "short_description": "A quick and healthy stir-fry loaded with fresh vegetables.",
+      "ingredients": ["200 g broccoli", "150 g carrots", "100 g bell peppers", "2 tbsp soy sauce", "2 tsp sesame oil"],
+      "preparing_time": "20 min",
+      "calories": "200 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/mcZ7hFV/you-le-CAi-TZ4kyw-A4-unsplash.jpg",
+      "recipe_id": 4,
+      "recipe_name": "Fluffy Pancakes",
+      "short_description": "Light and fluffy pancakes perfect for breakfast or brunch.",
+      "ingredients": ["200 g flour", "2 eggs", "300 ml milk", "2 tbsp sugar", "1 tsp baking powder"],
+      "preparing_time": "25 min",
+      "calories": "350 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/b2BbtrV/delaney-van-z8xu0-ZPV1-U8-unsplash.jpg",
+      "recipe_id": 5,
+      "recipe_name": "Grilled Salmon",
+      "short_description": "Tender and juicy salmon fillet grilled to perfection.",
+      "ingredients": ["2 salmon fillets", "1 lemon", "2 tsp olive oil", "1 tsp black pepper", "1 tsp salt"],
+      "preparing_time": "15 min",
+      "calories": "300 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/SK2GR6N/jonathan-pielmayer-e-FFn-KMi-DMGc-unsplash.jpg",
+      "recipe_id": 6,
+      "recipe_name": "Caesar Salad",
+      "short_description": "A classic Caesar salad with crisp lettuce, croutons, and creamy dressing.",
+      "ingredients": ["1 head romaine lettuce", "50 g croutons", "30 g Parmesan cheese", "3 tbsp Caesar dressing", "1 grilled chicken breast"],
+      "preparing_time": "10 min",
+      "calories": "250 calories"
+    } 
+  ]
+  
+
+
+
+
