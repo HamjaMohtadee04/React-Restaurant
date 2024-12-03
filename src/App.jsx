@@ -1,5 +1,6 @@
 import './App.css'
 import Content from './component/Content/Content'
+import CookTable from './component/CookTable/CookTable'
 import Header from './component/Header/Header'
 import Nav from './component/Nav/Nav'
 import Receipes from './component/Receipes/Receipes'
@@ -14,7 +15,12 @@ function App() {
      </Nav>
      </div>
      <Content></Content>
-     <Receipes></Receipes>
+    
+<div className='md:flex'>
+<Receipes></Receipes>
+<CookTable></CookTable>
+</div>
+
       </div>
     </>
   )
