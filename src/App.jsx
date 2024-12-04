@@ -9,7 +9,8 @@ function App() {
   const  [cookTable,setCookTable] = useState([])
 
   const handleAddtoCookTable = receipe =>{
-    console.log('adding soon')
+   const newCookTable = [...cookTable,receipe]
+   setCookTable(newCookTable)
   }
 
   return (
@@ -24,7 +25,7 @@ function App() {
     
 <div className='md:flex my-10 justify-between mx-20 p-15 gap-20'>
 <Receipes handleAddtoCookTable={handleAddtoCookTable}></Receipes>
-<CookTable></CookTable>
+<CookTable cookTable={cookTable}></CookTable>
 </div>
 
       </div>
