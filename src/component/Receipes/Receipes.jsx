@@ -10,6 +10,10 @@ const Receipes = ({handleAddtoCookTable}) => {
     useEffect(()=>{
         fetch('recepies.json')
         .then(res =>res.json())
+
+
+
+        
         .then(data=>setReceipes(data))
 
     },[])
@@ -17,12 +21,14 @@ const Receipes = ({handleAddtoCookTable}) => {
         <div className="md:w-2/3 grid grid-cols-2 gap-10 my-10">
             {/* <h1 className="text-3xl">Recipies:{receipes.length}</h1> */}
             {
-                receipes.map(receipe => <Receipe
+                receipes.map((receipe) => <Receipe
                      key={receipe.id} 
                      receipe={receipe}
                      handleAddtoCookTable={handleAddtoCookTable}
+                     
                 ></Receipe>)
             }
+            
         </div>
     );
 };

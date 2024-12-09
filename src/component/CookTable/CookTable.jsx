@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import SingleCookTable from "../SingleCookTable/SingleCookTable";
 // import SingleCookTable from "../SingleCookTable/SingleCookTable";
 
-const CookTable = ({cookTable}) => {
+const CookTable = ({cookTable,setCookTable}) => {
     return (
         <div className="md:w-1/3">
             <h1 className="text-3xl">Want to cook:{cookTable.length}</h1>
@@ -28,9 +28,10 @@ const CookTable = ({cookTable}) => {
         //     <td>{p.preparing_time}</td>
         //     <td>{p.calories}</td>
         //   </tr>)
-        cookTable.map(table => <SingleCookTable key={table.id} singleCookTable={table}></SingleCookTable>)
+        cookTable.map(table => <SingleCookTable key={table.id} singleCookTable={table} setCookTable={setCookTable}></SingleCookTable>)
       }
      
+
     </tbody>
   </table>
 </div>
@@ -41,11 +42,20 @@ const CookTable = ({cookTable}) => {
                     singleCookTable={cookTable}> 
                     </SingleCookTable>)
             } */}
+
+   <div>
+    <h1>Preparing</h1>
+    
+   </div>
+
+
+
         </div>
     );
 };
 
 CookTable.propTypes={
-    cookTable : PropTypes.array
+    cookTable : PropTypes.array,
+    setCookTable:PropTypes.func
 }
 export default CookTable;

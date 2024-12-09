@@ -8,10 +8,15 @@ import Receipes from './component/Receipes/Receipes'
 function App() {
   const  [cookTable,setCookTable] = useState([])
 
-  const handleAddtoCookTable = receipe =>{
+  const handleAddtoCookTable = (receipe) =>{
    const newCookTable = [...cookTable,receipe]
    setCookTable(newCookTable)
+   //remove recipe_id
+  //  const remainingReceipe = cookTable.filter(cookTable => cookTable.recipe_id !==recipe_id)
+  //  setCookTable(remainingReceipe)
+  // 
   }
+  
 
   return (
     <>
@@ -25,7 +30,7 @@ function App() {
     
 <div className='md:flex my-10 justify-between mx-20 p-15 gap-20'>
 <Receipes handleAddtoCookTable={handleAddtoCookTable}></Receipes>
-<CookTable cookTable={cookTable}></CookTable>
+<CookTable cookTable={cookTable} setCookTable ={setCookTable} ></CookTable>
 </div>
 
       </div>

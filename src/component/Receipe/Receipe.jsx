@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
+
 import { FaRegClock } from "react-icons/fa";
 import { GiBurningEye } from "react-icons/gi";
 const Receipe = ({receipe,handleAddtoCookTable}) => {
   const {ingredients,recipe_name,short_description,recipe_image,preparing_time,calories} = receipe;
+  
+
     return (
         <div className=''>
            
@@ -34,7 +37,7 @@ const Receipe = ({receipe,handleAddtoCookTable}) => {
     </div>
    
     <div className='bg-green-500 rounded-xl font-semibold text-center p-2 mt-5'>
-    <button onClick={()=>handleAddtoCookTable(receipe)} className="btn btn-success">Want to cook</button>
+    <button onClick={()=>handleAddtoCookTable(receipe) } className="btn btn-success">Want to cook</button>
     </div>
   </div>
 </div>
