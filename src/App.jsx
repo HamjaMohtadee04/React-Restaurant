@@ -7,6 +7,7 @@ import Nav from './component/Nav/Nav'
 import Receipes from './component/Receipes/Receipes'
 function App() {
   const  [cookTable,setCookTable] = useState([])
+  const [currentlyCooking, setCurrentlyCooking] = useState([]);
 
   const handleAddtoCookTable = (receipe) =>{
    const newCookTable = [...cookTable,receipe]
@@ -30,7 +31,12 @@ function App() {
     
 <div className='md:flex my-10 justify-between mx-20 p-15 gap-20'>
 <Receipes handleAddtoCookTable={handleAddtoCookTable}></Receipes>
-<CookTable cookTable={cookTable} setCookTable ={setCookTable} ></CookTable>
+<CookTable
+ cookTable={cookTable} 
+ setCookTable ={setCookTable} 
+ currentlyCooking={currentlyCooking}
+ setCurrentlyCooking={setCurrentlyCooking}
+ ></CookTable>
 </div>
 
       </div>

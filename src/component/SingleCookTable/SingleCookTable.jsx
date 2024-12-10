@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 // import { useState } from "react";
 
-const SingleCookTable = ({singleCookTable,setCookTable}) => {
+const SingleCookTable = ({singleCookTable,setCookTable,setCurrentlyCooking}) => {
     const {recipe_name,preparing_time,calories,recipe_id} = singleCookTable 
 //         const [cook,setCook] =useState(0)
 
@@ -16,6 +16,11 @@ const SingleCookTable = ({singleCookTable,setCookTable}) => {
     setCookTable((prevCookTable) =>
       prevCookTable.filter((item) => item.recipe_id !== recipe_id)
     );
+    // Add to "Currently Cooking" table
+    setCurrentlyCooking((prevCurrentlyCooking) => [
+      ...prevCurrentlyCooking,
+      singleCookTable,
+    ]);
   }
     return (
        
@@ -31,6 +36,8 @@ const SingleCookTable = ({singleCookTable,setCookTable}) => {
 };
 
 SingleCookTable.propTypes ={
-    singleCookTable:PropTypes.object,setCookTable:PropTypes.func
+    singleCookTable:PropTypes.object,
+    setCookTable:PropTypes.func,
+    setCurrentlyCooking:PropTypes.func
 }
 export default SingleCookTable;
