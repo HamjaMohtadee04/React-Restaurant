@@ -3,19 +3,13 @@ import { useState } from "react";
 import Receipe from "../Receipe/Receipe";
 import PropTypes from "prop-types";
 
-
 const Receipes = ({handleAddtoCookTable}) => {
     const [receipes,setReceipes] =useState([])
 
     useEffect(()=>{
         fetch('recepies.json')
         .then(res =>res.json())
-
-
-
-        
         .then(data=>setReceipes(data))
-
     },[])
     return (
         <div className="md:w-2/3 grid grid-cols-2 gap-10 my-10">

@@ -18,7 +18,7 @@ function App() {
   // //  const remainingReceipe = cookTable.filter(cookTable => cookTable.recipe_id !==recipe_id)
   // //  setCookTable(remainingReceipe)
   // // 
-   // Check if the recipe is already in the "Want to Cook" table
+   // Check if the recipe is already in the Want to Cook table
    const isAlreadyAdded = cookTable.some((item) => item.recipe_id === recipe.recipe_id);
 
    if (isAlreadyAdded) {
